@@ -4,7 +4,6 @@ declare(strict_types = 1);
 
 namespace App\Tests\EndToEnd;
 
-use App\Output\OutputInterface;
 use Symfony\Component\Console\Exception\RuntimeException;
 use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\Console\Tester\CommandTester;
@@ -66,7 +65,6 @@ class CommandTest extends CommandTestCase
         }
 
         $commandTester->execute($arguments);
-        //$this->expectOutputString($expectedOutput);
         $this->assertEquals($expectedOutput, $commandTester->getDisplay());
     }
 }
