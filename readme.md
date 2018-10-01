@@ -2,6 +2,8 @@
 
 Processes cash operations from specified csv file and outputs commissions.
 
+[Full task objective](task.md)
+
 ## Environment requirements ##
 
 * PHP 7.1.*
